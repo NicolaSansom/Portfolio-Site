@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Keeping Cool</title>
+</head>
+<body>
+  <script src="assets/js/jquery-1.12.2.min.js" type="text/javascript"></script>
+  <script src="assets/js/game.js" type="text/javascript"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  <div class="popup-background">
+    <span id="close">&times;</span>
+  </div>
+  <div id="triggers-content">
+    <div class="audio" id="trigger-audio"><img src="assets/img/ui-icons/audio.svg" alt="Audio Icon"></div>
+    <div class="triggers-heading-wrapper">
+      <div class="triggers-headline">Step 1- Understanding what makes you angry</div>
+      <div class="triggers-subheading">Being able to identify the triggers of what makes you <br /> angry will help you avoidgetting angry in different situations.</div>
+    </div>
+    <div class="actions-wrapper">
+      <div id="trigger-content-arrow-next" class="arrow-right-content"><img src="assets/img/ui-icons/arrowleft.svg" alt=""></div>
+    </div>
+  </div>
+  <div id="triggers-question">
+    <div class="audio" id="trigger-audio-question"><img src="assets/img/ui-icons/audio.svg" alt="Audio Icon"></div>
+    <div class="trigger-question-header">
+      What pushes your buttons?
+    </div>
+    <div class="trigger-answer-wrapper">
+      <div class="trigger-answer">Being snitched on</div>
+      <div class="trigger-answer">Being told what to do</div>
+      <div class="trigger-answer">Criticized</div>
+      <div class="trigger-answer">Being touched</div>
+      <div class="trigger-answer">Things that are not fair</div>
+      <div class="trigger-answer">Things that don't go your way</div>
+    </div>
+    <div class="actions-wrapper">
+      <div id="trigger-question-arrow-next" class="arrow-right-content"><img src="assets/img/ui-icons/arrowleft.svg" alt=""></div>
+    </div>
+  </div>
+  <div class="popup-without-close">
+  </div>
+  <div id="how-to-play">
+    <div class="instructions">
+
+    </div>
+    <div class="button">Play</div>
+  </div>
+  <div id="content-popup-text">
+
+    <div class="content-wrapper">
+      <div class="audio" id="content-audio"><img src="assets/img/ui-icons/audio.svg" alt="Audio Icon"></div>
+      <div class="content-header">Understanding your triggers</div>
+      <div id="content-wrapper-popup">
+      </div>
+      <div class="actions-wrapper">
+        <div id="content-arrow-next" class="arrow-right"><img src="assets/img/ui-icons/arrowleft.svg" alt=""></div>
+      </div>
+      </div>
+
+    </div>
+
+    <div id="game-end-pop-up">
+      <div class="game-end-header">
+        <h1 class="final_feedback">You ran out of lifes!</h1>
+        <div class="labels">
+          <div class="box-label">Progress</div>
+          <div class="box-label">Score</div>
+        </div>
+        <div class="boxs">
+          <div class="box-content"><span class="progress-percent">55%</span></div>
+          <div class="box-content"><span class="finalscore-score">1304</span></div>
+        </div>
+      </div>
+      <div class="gameover-chioces">
+        <a href="#" id="reset-game" class="play-again button">Play again</a>
+        <span class="or">OR</span>
+        <div class="free-content secondary-button"><img src="assets/img/ui-icons/present.svg" alt="present icon">Free content</div>
+      </div>
+    </div>
+
+  <div id="question-popup">
+    <div class="audio" id="question-audio"><img src="assets/img/ui-icons/audio.svg" alt="Audio Icon"></div>
+    <div class="question">
+      <p>Ryan overheard his friend Shannon saying that he was
+     stupid.<br />He felt like he never wanted to talk to Shannon again.</p>
+    </div>
+    <div class="answers-wrapper">
+      <div data-key="1" class="answer">
+        <p>
+        Shout at Shannon and tell
+        her she is stupid</p>
+      </div>
+      <div  data-key="2" class="answer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, impedit! Walk away and cool down</p>
+      </div>
+      <div data-key="3" class="answer">
+        <p>
+        Punch him so he will not
+        do it again</p>
+      </div>
+      <div data-key="4" class="answer">
+        <p>
+          Tell Shannon what she said</p>
+      </div>
+    </div>
+    <div class="actions-wrapper" id="question-actions">
+      <div class="arrow-left"><img src="assets/img/ui-icons/arrowright.svg" alt=""></div>
+      <div class="result">Unfortunately you got no points this round, however can always go
+      back to the question content and try again by clicking the back button.</div>
+      <div id="following-content" class="arrow-right"><img src="assets/img/ui-icons/arrowleft.svg" alt=""></div>
+    </div>
+  </div>
+
+
+  <div class="content-popup"></div>
+  <div class="map-wrapper">
+    <div class="map-inner">
+      <div id="startscreen-wrapper">
+        <div id="startscreen">
+          <div class="logo">
+          <img src="assets/img/logo.svg" alt="Keeping Cool logo">
+          </div>
+          <div class="button-wrapper">
+          <div class="inst secondary-button">
+            How to play
+          </div>
+          <div class="button" id="start-game">
+            Start
+          </div>
+      </div>
+      </div>
+     </div>
+      <div class="ui-controls">
+        <div class="score flex-row">
+          <div class="ui-label">
+            Score
+          </div>
+            <div id="score-num" class="ui-box">
+              1240
+            </div>
+        </div>
+        <div class="lives flex-row">
+          <div class="ui-icon">
+            <span class="vertical-center">
+              <img src="assets/img/emojis/heart.svg" alt="Heart Icon">
+            </span>
+          </div>
+          <div id="lives-num" class="ui-box">
+            1
+          </div>
+        </div>
+        <div class="mood">
+          <div class="mood-label">
+            <span id="mood-text">Mood</span>
+          </div>
+          <div class="mood-icon">
+            <img id="emojis-icon" src="assets/img/emojis/happy.svg" alt="Sad Emoji">
+          </div>
+        </div>
+      </div>
+      <div class="checkpoint-wrapper">
+          <div class="checkpoint-wrapper-inner">
+          <div class="open-trigger green"></div>
+          <div data-progress="1" class="red lock progress-point"></div>
+          <div data-progress="2" class="open-content green lock progress-point"></div>
+          <div data-progress="3" class="open-action red lock progress-point"></div>
+          <div data-progress="4" class="green lock progress-point"></div>
+          <div data-progress="5" class="red lock progress-point"></div>
+          <div data-progress="6" class="green lock progress-point"></div>
+          <div data-progress="7" class="red lock progress-point"></div>
+          <div data-progress="8" class="green lock progress-point"></div>
+          <div data-progress="9" class="red lock progress-point"></div>
+          <div data-progress="10" class="green lock progress-point"></div>
+          <div data-progress="11" class="red lock progress-point"></div>
+          <div data-progress="16" class="gold star progress-point"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
