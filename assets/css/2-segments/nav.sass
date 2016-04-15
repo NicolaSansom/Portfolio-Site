@@ -1,0 +1,65 @@
+*,
+*:after,
+*::before
+  box-sizing: border-box
+
+// header styles
+.head-wrapper
+  height: 100vh
+  display: inline-block
+  flex-flow: column
+  justify-content: center
+  border-right: 1px solid $light-grey
+  padding: 20px
+.logo
+  text-transform: uppercase
+  font-size: 30px
+
+  span
+    font-weight: bold
+
+
+.nav-wrapper
+  display: flex
+  padding: 12px 10px 10px
+  flex-flow: column
+  a
+    margin-top: 30px
+    font-size: 18px
+    color: rgba(31, 42, 55, 1)
+    font-weight: 700
+    position: relative
+    display: inline-block
+    outline: none
+    text-decoration: none
+    text-shadow: none
+    text-transform: uppercase
+    letter-spacing: 1px
+
+.nav-wrapper a:first-child
+  margin-top: 0px
+
+
+.nav-wrapper a::before
+  color: rgba(145, 61, 85, 1)
+  content: attr(data-hover)
+  position: absolute
+  transition: transform 0.3s, opacity 0.3s
+
+.nav-wrapper a::after
+  position: absolute
+  left: 0
+  top: 40px
+  content: ''
+  width: 10px
+  height: 1px
+  background: rgba(31, 42, 55, 1)
+  transition: all 0.6s ease
+
+.nav-wrapper a:hover::after
+  width: 150px
+
+.nav-wrapper a:hover::before,
+.nav-wrapper a:focus::before
+  transform: scale(0.9)
+  opacity: 0
