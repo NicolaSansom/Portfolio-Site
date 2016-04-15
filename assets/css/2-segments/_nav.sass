@@ -6,6 +6,7 @@
 // header styles
 .head-wrapper
   height: 100vh
+  min-width: 16%
   display: inline-block
   flex-flow: column
   justify-content: center
@@ -17,6 +18,8 @@
 
   span
     font-weight: bold
+  img
+    width: 80px
 
 
 .nav-wrapper
@@ -26,7 +29,7 @@
   a
     margin-top: 30px
     font-size: 18px
-    color: rgba(31, 42, 55, 1)
+    color: rgba(145, 61, 85, 1)
     font-weight: 700
     position: relative
     display: inline-block
@@ -41,7 +44,7 @@
 
 
 .nav-wrapper a::before
-  color: rgba(145, 61, 85, 1)
+  color: rgba(31, 42, 55, 1)
   content: attr(data-hover)
   position: absolute
   transition: transform 0.3s, opacity 0.3s

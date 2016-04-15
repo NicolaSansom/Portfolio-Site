@@ -1,0 +1,70 @@
+.home
+  //padding: 30px 0px
+  font-size: 20px
+  margin-top: 2em
+
+  h1
+    width: 100%
+    margin-bottom: 0.3em
+
+.intro
+  display: flex
+  //padding-left: 4em
+  flex-flow: row wrap
+  align-items: center
+  justify-content: center
+
+
+.bio
+  order: 1
+  width: 50%
+  +mummy-bear
+    width: 55%
+  +middle-bear
+    width: 48%
+    font-size: 17px
+    h1
+      font-size: 30px
+  +baby-bear
+    width: 90%
+
+  p
+    margin: 0
+    padding: 0
+    padding-right: 40px
+  // add padding in with media query
+
+.well-versed
+  margin-top: 0.5em
+  margin-bottom: 0.5em
+  li
+    text-decoration: none
+    list-style: none
+    margin: 0
+    ul
+      padding: 0
+      margin: 0
+  +baby-bear
+    margin-top: 1em
+    margin-top: 1em
+
+
+.fav-emojis
+  width: 100%
+
+.portrait
+  order: 2
+  width: 25%
+  +mummy-bear
+    width: 35%
+    padding-left: 10px
+  +middle-bear
+    width: 40%
+
+
+
+  img
+    width: 100%
+    border: 30px solid white
+    +baby-bear
+      display: none
