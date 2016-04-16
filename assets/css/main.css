@@ -374,7 +374,7 @@ textarea {
   font-style: normal; }
 body {
   background-color: white;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   font-family: "Karla", sans-serif;
   color: #1f2a37;
@@ -725,9 +725,7 @@ input[type="button"] {
             transform: translateY(0%); } }
 
 .home {
-  font-size: 20px;
-  margin-top: 2em;
-  height: 2000px; }
+  margin-top: 2em; }
   .home h1 {
     width: 100%;
     margin-bottom: 0.3em; }
@@ -773,22 +771,33 @@ input[type="button"] {
     padding-right: 40px; }
 
 .well-versed {
+  padding-top: 10px;
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
   .well-versed li {
     text-decoration: none;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    padding: 15px 0px; }
     .well-versed li ul {
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      padding-top: 5px; }
   @media (max-width: 765px) {
     .well-versed {
       margin-top: 1em;
       margin-top: 1em; } }
 
 .fav-emojis {
-  width: 100%; }
+  width: 100%;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+  .fav-emojis img {
+    width: 40px; }
+
+.emojis {
+  padding-top: 15px; }
 
 .portrait {
   -webkit-box-ordinal-group: 3;
@@ -809,11 +818,12 @@ input[type="button"] {
     @media (max-width: 765px) {
       .portrait img {
         display: none; } }
+
+.typing-text {
+  opacity: 1; }
 
 .home {
-  font-size: 20px;
-  margin-top: 2em;
-  height: 2000px; }
+  margin-top: 2em; }
   .home h1 {
     width: 100%;
     margin-bottom: 0.3em; }
@@ -859,22 +869,33 @@ input[type="button"] {
     padding-right: 40px; }
 
 .well-versed {
+  padding-top: 10px;
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
   .well-versed li {
     text-decoration: none;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    padding: 15px 0px; }
     .well-versed li ul {
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      padding-top: 5px; }
   @media (max-width: 765px) {
     .well-versed {
       margin-top: 1em;
       margin-top: 1em; } }
 
 .fav-emojis {
-  width: 100%; }
+  width: 100%;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+  .fav-emojis img {
+    width: 40px; }
+
+.emojis {
+  padding-top: 15px; }
 
 .portrait {
   -webkit-box-ordinal-group: 3;
@@ -895,3 +916,6 @@ input[type="button"] {
     @media (max-width: 765px) {
       .portrait img {
         display: none; } }
+
+.typing-text {
+  opacity: 1; }
