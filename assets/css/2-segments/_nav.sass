@@ -5,11 +5,28 @@
 
 // header styles
 .head-wrapper
-  height: 100vh
-  min-width: 16%
-  display: inline-block
-  flex-flow: column
-  justify-content: center
+  min-width: 195px
+  +baby-bear
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  .header-position
+    position: fixed
+    top: 30px
+    width: 195px
+    left: 15px
+    bottom: 0
+    display: flex
+    flex-flow: column
+    +baby-bear
+      width: auto
+      position: relative
+      top: auto
+      left: auto
+      flex-flow: row
+      align-items: center
+
   border-right: 1px solid $light-grey
   padding: 20px
 .logo
@@ -20,12 +37,15 @@
     font-weight: bold
   img
     width: 80px
+    +baby-bear
+      max-width: 50px
 
-
-.nav-wrapper
+.main-nav
   display: flex
   padding: 12px 10px 10px
   flex-flow: column
+  +baby-bear
+    display: none
   a
     margin-top: 30px
     font-size: 18px
@@ -39,17 +59,17 @@
     text-transform: uppercase
     letter-spacing: 1px
 
-.nav-wrapper a:first-child
+.main-nav a:first-child
   margin-top: 0px
 
 
-.nav-wrapper a::before
+.main-nav a::before
   color: rgba(31, 42, 55, 1)
   content: attr(data-hover)
   position: absolute
   transition: transform 0.3s, opacity 0.3s
 
-.nav-wrapper a::after
+.main-nav a::after
   position: absolute
   left: 0
   top: 40px
@@ -59,10 +79,74 @@
   background: rgba(31, 42, 55, 1)
   transition: all 0.6s ease
 
-.nav-wrapper a:hover::after
+.main-nav a:hover::after
   width: 150px
 
-.nav-wrapper a:hover::before,
-.nav-wrapper a:focus::before
+.main-nav a:hover::before,
+.main-nav a:focus::before
   transform: scale(0.9)
   opacity: 0
+
+.mobile-nav-toggle
+  width: 50px
+  height: 50px
+  cursor: pointer
+  //margin-right: 20px
+  display: none
+  +baby-bear
+    display: flex
+    align-items: center
+
+  span,
+  span::before,
+  span::after
+    height: 2px
+    content: ''
+    width: 100%
+    background: $primary
+    display: block
+    position: relative
+    transition: all 0.3s ease-in-out
+
+  span::after
+    top: -17px
+
+  span::before
+    top: 15px
+
+  &.is-open span
+    background: transparent
+
+  &.is-open span:before,
+  &.is-open span:after
+    transform-origin: center
+    transform: rotate(45deg)
+    top: 0
+  &.is-open span:after
+    transform: rotate(-45deg)
+
+
+.mobile-nav
+  display: none
+  position: absolute
+  width: 100%
+  background: white
+  padding: 20px 0 20px
+  flex-flow: column
+  align-items: center
+  transform: translateY(-100%)
+  transition: all 0.3s ease-in-out
+
+  a
+    margin-top: 30px
+    font-size: 18px
+    font-weight: 700
+    position: relative
+    display: inline-block
+    text-transform: uppercase
+    letter-spacing: 1px
+
+.mobile-nav.is-open
+  +baby-bear
+    display: flex
+    transform: translateY(0%)

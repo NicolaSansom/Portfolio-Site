@@ -8,17 +8,27 @@
   <title>Nicola Sansom</title>
 </head>
 <body>
+  <nav class="mobile-nav">
+    <a class="mobile-nav-child" data-hover="About Me" href="#">About Me</a>
+    <a class="mobile-nav-child" data-hover="Work" href="#">Work</a>
+    <a class="mobile-nav-child" data-hover="Process" href="#">Process</a  >
+    <a class="mobile-nav-child" data-hover="Contact Me" href="#">Contact Me</a>
+  </nav>
   <div class="body-wrapper">
+
     <header class="head-wrapper">
-      <div class="logo">
+      <div class="header-position">
+        <div class="logo">
           <img src="assets/img/logo.svg" alt="">
+        </div>
+        <nav class="main-nav">
+          <a class="main-nav-child" data-hover="About Me" href="#">About Me</a>
+          <a class="main-nav-child" data-hover="Work" href="#">Work</a>
+          <a class="main-nav-child" data-hover="Process" href="#">Process</a  >
+          <a class="main-nav-child" data-hover="Contact Me" href="#">Contact Me</a>
+        </nav>
       </div>
-      <nav class="nav-wrapper">
-        <a class="nav-child" data-hover="About Me" href="#">About Me</a>
-        <a class="nav-child" data-hover="Work" href="#">Work</a>
-        <a class="nav-child" data-hover="Process" href="#">Process</a  >
-        <a class="nav-child" data-hover="Contact Me" href="#">Contact Me</a>
-      </nav>
+      <div class="mobile-nav-toggle"><span></span></div>
     </header>
     <div class="content-wrapper">
       <div class="home">
@@ -67,8 +77,8 @@
   </div>
 
   <script src="assets/js/jquery-1.12.2.min.js" type="text/javascript"></script>
-  <script src="assets/js/game.js" type="text/javascript"></script>
-  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  <script src="assets/js/functions.js" type="text/javascript"></script>
+
 
 </body>
 </html>
