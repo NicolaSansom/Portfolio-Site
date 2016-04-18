@@ -8,8 +8,11 @@
   min-width: 195px
   +baby-bear
     display: flex
+    z-index: 2000
     flex-direction: row
     justify-content: space-between
+    align-items: center
+    padding: 20px 20px
 
   .header-position
     position: fixed
@@ -24,21 +27,19 @@
       position: relative
       top: auto
       left: auto
+      height: 0px
       flex-flow: row
       align-items: center
 
   border-right: 1px solid $light-grey
   padding: 20px
 .logo
-  text-transform: uppercase
-  font-size: 30px
-
-  span
-    font-weight: bold
+  line-height: 0
   img
     width: 80px
     +baby-bear
-      max-width: 50px
+      max-width: 60px
+      padding: -10px
 
 .main-nav
   display: flex
@@ -128,13 +129,16 @@
 .mobile-nav
   display: none
   position: absolute
+  top: 74px
+  z-index: 200
   width: 100%
+  border-bottom: 1px solid $light-grey
   background: white
-  padding: 20px 0 20px
+  padding: 0 0 40px 0
   flex-flow: column
   align-items: center
   transform: translateY(-100%)
-  transition: all 0.3s ease-in-out
+  transition: 0.3s linear
 
   a
     margin-top: 30px
@@ -144,6 +148,8 @@
     display: inline-block
     text-transform: uppercase
     letter-spacing: 1px
+    color: $primary
+    text-decoration: none
 
 .mobile-nav.is-open
   +baby-bear

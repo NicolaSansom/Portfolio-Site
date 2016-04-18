@@ -47,7 +47,7 @@ $( document ).ready(function() {
   blinks = blinks + 1;
   }
   $('.typing-text').promise().done(function(){
-    $('.typing-text').html("Hello There!!");
+    $('.typing-text').html("Hey There!!");
     var $el = $('.typing-text'),
     html = $el.html(),
     txt = $el.text(),
