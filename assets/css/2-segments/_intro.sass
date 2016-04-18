@@ -1,5 +1,11 @@
-.home
-  margin-top: 2em
+#about-me
+
+  height: 100vh
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  align-items: center
+
 
   h1
     width: 100%
@@ -10,6 +16,8 @@
   flex-flow: row wrap
   align-items: center
   justify-content: center
+  width: 100%
+
 
 
 .bio
@@ -27,7 +35,7 @@
 
   p
     margin: 0
-    padding: 0
+    padding: 0.5em 0
     padding-right: 40px
   // add padding in with media query
 
@@ -39,7 +47,7 @@
     text-decoration: none
     list-style: none
     margin: 0
-    padding: 15px 0px
+    padding: 0px 0px
     ul
       padding: 0
       margin: 0
@@ -49,13 +57,6 @@
     margin-top: 1em
 
 
-.fav-emojis
-  width: 100%
-  align-self: flex-end
-  img
-    width: 40px
-.emojis
-  padding-top: 15px
 
 .portrait
   order: 2
@@ -73,5 +74,14 @@
     border: 30px solid white
     +baby-bear
       display: none
+
+.fav-emojis
+  padding-top: 1em
+  img
+    width: 50px
+    border: 0
+.emojis
+  padding-top: 15px
+
 .typing-text
   opacity: 1

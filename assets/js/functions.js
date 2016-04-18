@@ -1,6 +1,42 @@
+function smoothScroll (duration) {
+	$('a[href^="#"]').on('click', function(event) {
+
+	    var target = $( $(this).attr('href') );
+
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, duration);
+	    }
+	});
+}
+
+
+$("#porflio-piece-1").animatedModal();
+$("#demo02").animatedModal({
+    modalTarget:'modal-02',
+    animatedIn:'lightSpeedIn',
+    animatedOut:'bounceOutDown',
+    color:'#ffffff',
+    // Callbacks
+    beforeOpen: function() {
+        console.log("The animation was called");
+    },
+    afterOpen: function() {
+        console.log("The animation is completed");
+    },
+    beforeClose: function() {
+        console.log("The animation was called");
+    },
+    afterClose: function() {
+        console.log("The animation is completed");
+    }
+});
+
 
 $( document ).ready(function() {
-
+  smoothScroll(300);
 
   var blinks = 0;
   var timetotype = false;
@@ -38,21 +74,11 @@ $el.text('|');
 }());
 
 
-
   });
-
-
-
-
-
-
-
-
-
-
-
 
     $('.mobile-nav-toggle').on('click', function() {
        $(".mobile-nav-toggle, .mobile-nav").toggleClass("is-open");
     });
+
+
 });
