@@ -745,6 +745,28 @@ input[type="button"] {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
 
+.close-modal-02 {
+  position: relative; }
+
+.cross {
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  padding-top: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  background: #f5f3f0;
+  left: 90%;
+  font-weight: 700;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  cursor: pointer;
+  font-size: 30px; }
+  .cross:hover {
+    color: #913d55;
+    background: #eae6e1; }
+
 #work {
   min-height: 100vh;
   padding: 50px 0 30px 0;
@@ -819,16 +841,81 @@ input[type="button"] {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   height: 100%; }
+  .porflio-piece-inner a {
+    text-decoration: none; }
+
+.project-name {
+  text-align: center;
+  height: 100px;
+  padding: 20px;
+  width: 100%;
+  font-size: 18px;
+  color: #1f2a37;
+  position: relative; }
+  @media (max-width: 1054px) {
+    .project-name {
+      font-size: 25px; } }
+  @media (max-width: 765px) {
+    .project-name {
+      font-size: 22px; } }
+  @media (max-width: 495px) {
+    .project-name {
+      font-size: 18px; } }
 
 .project-type {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1.5px;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  padding: 10px;
+  color: #f1dd34; }
+  @media (max-width: 1054px) {
+    .project-type {
+      font-size: 25px; } }
+  @media (max-width: 765px) {
+    .project-type {
+      font-size: 25px; } }
+  @media (max-width: 495px) {
+    .project-type {
+      font-size: 17px; } }
 
-.project-name {
-  text-align: center;
+.project-type::after {
+  position: absolute;
+  height: 1px;
+  width: 40%;
+  background: #E0E0E0;
+  top: 70%;
+  left: 30%;
+  content: ""; }
+
+#porflio-piece-3 .project-type {
+  color: #59a18f; }
+
+#porflio-piece-4 span {
+  font-size: 16px;
+  color: #9E9E9E;
+  font-style: italic;
+  font-weight: normal;
+  text-transform: lowercase; }
+  @media (max-width: 495px) {
+    #porflio-piece-4 span {
+      font-size: 14px; } }
+
+#porflio-piece-5 .project-type {
+  color: #ab9b87; }
+
+#porflio-piece-6 {
   width: 100%; }
+  #porflio-piece-6 .project-type {
+    color: #567599; }
+
+#porflio-piece-7 .project-type {
+  color: #59a18f; }
+
+#porflio-piece-8 .project-type {
+  color: #c37188; }
 
 #about-me {
   height: 100vh;
@@ -881,9 +968,14 @@ input[type="button"] {
   @media (max-width: 860px) {
     .bio {
       width: 48%;
-      font-size: 17px; }
+      font-size: 18px;
+      padding-top: 50px; }
       .bio h1 {
         font-size: 30px; } }
+    @media (max-width: 860px) and (max-width: 495px) {
+      .bio h1 {
+        font-size: 20px; } }
+
   @media (max-width: 765px) {
     .bio {
       width: 90%; } }
@@ -941,9 +1033,16 @@ input[type="button"] {
 
 .typing-text {
   opacity: 1; }
+  @media (max-width: 495px) {
+    .typing-text {
+      font-size: 50px; } }
 
 #contact-me {
   background: #1f2a37;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
   padding: 5em 0;
   -webkit-transition: 0.5s linear;
@@ -955,6 +1054,12 @@ input[type="button"] {
     font-size: 50px;
     color: #b44d6a;
     text-decoration: none; }
+    @media (max-width: 1054px) {
+      #contact-me a {
+        font-size: 45px; } }
+    @media (max-width: 765px) {
+      #contact-me a {
+        font-size: 25px; } }
   #contact-me:hover {
     background: #314358;
     color: white; }
@@ -962,9 +1067,21 @@ input[type="button"] {
       color: white; }
     #contact-me:hover h1 {
       color: #dbebe7; }
+      @media (max-width: 765px) {
+        #contact-me:hover h1 {
+          font-size: 5px; } }
 
 .contact-me-inner {
-  width: 66%;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   margin: auto; }
   .contact-me-inner h1 {
     padding-bottom: 20px;

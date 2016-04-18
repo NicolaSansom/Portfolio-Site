@@ -1,8 +1,28 @@
+.close-modal-02
+  position: relative
+.cross
+  position: absolute
+  top: 10px
+  text-align: center
+  padding-top: 10px
+  width: 70px
+  height: 70px
+  border-radius: 50px
+  background: lighten($cream, 35%)
+  left: 90%
+  font-weight: 700
+  transition: 0.3s linear
+  cursor: pointer
+  font-size: 30px
+
+  &:hover
+    color: $accent
+    background: lighten($cream, 30%)
+
+
 #work
   min-height: 100vh
   padding: 50px 0 30px 0
-
-
   background: #eae6e1
   border-bottom: 1px solid $light-grey
   h1
@@ -54,12 +74,77 @@
   justify-content: center
   flex-flow: row wrap
   height: 100%
-.project-type
-  text-transform: uppercase
-  font-weight: 700
-  text-align: center
-  width: 100%
+  a
+    text-decoration: none
 
 .project-name
   text-align: center
+  height: 100px
+  padding: 20px
   width: 100%
+  font-size: 18px
+  color: $primary
+  position: relative
+  +mummy-bear
+    font-size: 25px
+  +baby-bear
+    font-size: 22px
+  +tiny-baby-bear
+    font-size: 18px
+
+.project-type
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 16px
+  letter-spacing: 1.5px
+  text-align: center
+  width: 100%
+  padding: 10px
+  color: $yellow
+  +mummy-bear
+    font-size: 25px
+  +baby-bear
+    font-size: 25px
+  +tiny-baby-bear
+    font-size: 17px
+
+.project-type::after
+  position: absolute
+  height: 1px
+  width: 40%
+  background: $light-grey
+  top: 70%
+  left: 30%
+  content: ''
+
+
+
+
+
+#porflio-piece-3
+  .project-type
+    color: $duck-egg
+
+#porflio-piece-4
+  span
+    font-size: 16px
+    color: $med-grey
+    font-style: italic
+    font-weight: normal
+    text-transform: lowercase
+    +tiny-baby-bear
+      font-size: 14px
+
+#porflio-piece-5
+  .project-type
+    color: $cream
+#porflio-piece-6
+  width: 100%
+  .project-type
+    color: $light-blue
+#porflio-piece-7
+  .project-type
+    color: $duck-egg
+#porflio-piece-8
+  .project-type
+    color: lighten($accent, 20%)
