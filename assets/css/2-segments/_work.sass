@@ -1,29 +1,39 @@
-.close-modal-02
-  position: relative
+#model-02
+  display: flex
+  align-items: middle
+  justify-content: middle
+
+
 .cross
-  position: absolute
-  top: 10px
+  margin: 20px 0 0 30px
+  position: relative
   text-align: center
-  padding-top: 10px
-  width: 70px
-  height: 70px
+  width: 50px
+  height: 50px
   border-radius: 50px
   background: lighten($cream, 35%)
-  left: 90%
-  font-weight: 700
   transition: 0.3s linear
   cursor: pointer
   font-size: 30px
-
   &:hover
     color: $accent
-    background: lighten($cream, 30%)
-
+    background: lighten($cream, 20%)
+.cross:after
+  position: absolute
+  top: 40%
+  left: 40%
+  content: ''
+  width: 10px
+  height: 10px
+  background-image: url('../../assets/img/cross.svg')
+  &:hover
+    opacity: 0.9
 
 #work
   min-height: 100vh
   padding: 50px 0 30px 0
-  background: #eae6e1
+  background: #eae6e1 url('../../assets/img/map-texture.png')
+  background-size: 50%
   border-bottom: 1px solid $light-grey
   h1
     padding: 0 0 0.2em 0.6em
@@ -48,6 +58,13 @@
 
 .porflio-piece
   width: 23%
+  opacity: 0
+  transition: opacity 0.25s linear
+  &.seen
+    animation-name: fadeIn
+    animation-duration: 1s
+    animation-delay: 1s
+    animation-fill-mode: both
   padding-bottom: 23%
   position: relative
   margin-top: 15px
@@ -85,10 +102,12 @@
   font-size: 18px
   color: $primary
   position: relative
+  +daddy-bear
+    font-size: 23px
   +mummy-bear
-    font-size: 25px
+    font-size: 24px
   +baby-bear
-    font-size: 22px
+    font-size: 27px
   +tiny-baby-bear
     font-size: 18px
 
@@ -101,12 +120,14 @@
   width: 100%
   padding: 10px
   color: $yellow
+  +daddy-bear
+    font-size: 19px
   +mummy-bear
-    font-size: 25px
+    font-size: 18px
   +baby-bear
-    font-size: 25px
+    font-size: 19px
   +tiny-baby-bear
-    font-size: 17px
+    font-size: 13px
 
 .project-type::after
   position: absolute
@@ -148,3 +169,73 @@
 #porflio-piece-8
   .project-type
     color: lighten($accent, 20%)
+
+// Styles for the portflio pop up screen
+
+.content-about-wrapper
+  width: 70%
+  margin: auto
+  background: white
+
+  b
+    color: $duck-egg
+    text-transform: uppercase
+
+.content-desc
+  font-size: 18px
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  justify-content: center
+
+  p
+    margin: 0
+    padding: 0
+.breif
+  width: 100%
+
+.my-role
+  width: 60%
+  margin-top: 0.5em
+.online
+  text-align: right
+  width: 40%
+  align-items: flex-end
+
+.browser-wrapper
+  display: flex
+  padding: 1em
+  align-items: center
+  justify-content: center
+
+
+
+.browser
+  position: relative
+  width: 76%
+  margin-bottom: 50px
+
+
+
+.pos
+  position: absolute
+
+.screen
+  width: 98.8%
+  height: 0
+  border-bottom-right-radius: 5px
+  margin: 0 auto
+
+  img
+    width: 100%
+    padding-bottom: 40px
+
+.browser-header
+  width: 100%
+  min-height: 5.7vw
+
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1

@@ -1,15 +1,17 @@
 #about-me
-
-  height: 100vh
+  background: url('../../assets/img/map-texture.png')
+  background-size: 50%
+  min-height: 100vh
   display: flex
   flex-flow: row wrap
   justify-content: center
   align-items: center
+  +mummy-bear
+    align-items: flex-start
+    min-height: auto
+  +baby-bear
+    align-items: center
 
-
-  h1
-    width: 100%
-    margin-bottom: 0.3em
 
 .intro
   display: flex
@@ -18,29 +20,43 @@
   justify-content: center
   width: 100%
 
+  h1
+    font-size: 20px
+    +mummy-bear
+      font-size: 18px
+    +tiny-baby-bear
+      font-size: 20px
+    +baby-bear
+      text-align: center
+
+
+
+
 
 
 .bio
   order: 1
   width: 50%
+  +middle-bear
+    width: 55%
+
   +mummy-bear
     width: 55%
-  +middle-bear
-    width: 48%
     font-size: 18px
-    padding-top: 50px
-    h1
-      font-size: 30px
-      +tiny-baby-bear
-        font-size: 20px
+    margin: 50px 0
+
+
   +baby-bear
     width: 90%
+    text-align: center
+    margin: 50px 0 0 0
+
 
   p
     margin: 0
     padding: 0.5em 0
     padding-right: 40px
-  // add padding in with media query
+
 
 .well-versed
   padding-top: 10px
@@ -55,38 +71,62 @@
       padding: 0
       margin: 0
       padding-top: 5px
-  +baby-bear
-    margin-top: 1em
-    margin-top: 1em
+
+
 
 
 
 .portrait
   order: 2
   width: 25%
+  +daddy-bear
+    margin: 60px 0 0 60px
   +mummy-bear
     width: 35%
     padding-left: 10px
   +middle-bear
     width: 40%
 
-
-
   img
-    width: 100%
+    width: 90%
     border: 30px solid white
+    +mummy-bear
+      width: 100%
     +baby-bear
       display: none
+.small-image
+  display: none
+  +baby-bear
+    display: block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 20px
+    img
+      width: 60%
+      border: 30px solid white
 
 .fav-emojis
   padding-top: 1em
+  +baby-bear
+    display: block
+    text-align: center
+    padding-bottom: 1em
+
   img
     width: 50px
     border: 0
+    display: inline
 .emojis
   padding-top: 15px
 
 .typing-text
   opacity: 1
+  +mummy-bear
+    font-size: 70px
+    text-align: center
+  +baby-bear
+    text-align: center
   +tiny-baby-bear
     font-size: 50px
+    text-align: center

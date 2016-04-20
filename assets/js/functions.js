@@ -12,22 +12,44 @@ function smoothScroll (duration) {
 	});
 }
 
+$(window).load(function(e) {
 
-$("#porflio-piece-1-open").animatedModal();
-$("#demo02").animatedModal({
-    modalTarget:'modal-02',
-    animatedIn:'bounceInLeft',
-    animatedOut:'bounceOutLeft',
-    color:'#ffffff'
+
+
 });
 
-
 $( document ).ready(function() {
+
+	$("#porflio-piece-1-open").animatedModal();
+	$("#demo02").animatedModal({
+	    modalTarget:'modal-02',
+	    animatedIn:'bounceInLeft',
+	    animatedOut:'bounceOutLeft',
+	    color:'#ffffff'
+	});
+
+
+	startpieces();
   smoothScroll(300);
+	$(window).on('scroll', function() {
+
+	var wScroll = $(window).scrollTop();
+	if($('#about-me').offset().top - 100 < wScroll) {
+		if(trigger ==1 ){
+		text();}
+		trigger = trigger + 1;
+
+	}
+
+
+
+	});
+	trigger = 0;
 
   var blinks = 0;
   var timetotype = false;
 
+	function text() {
   while (blinks < 1) {
   $('.typing-text').animate({"opacity": "0"}, "slow");
   $('.typing-text').animate({"opacity": "1"}, "slow");
@@ -62,10 +84,23 @@ $el.text('|');
 
 
   });
+}
 
     $('.mobile-nav-toggle').on('click', function() {
        $(".mobile-nav-toggle, .mobile-nav").toggleClass("is-open");
     });
 
+// fade in selected work
+
+function startpieces(){
+
+		$('.porflio-piece').each(function(i) {
+			setTimeout(function(){
+				$('.porflio-piece').eq(i).addClass('seen');
+			}, 300 * i);
+
+		});
+
+}
 
 });
