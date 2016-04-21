@@ -360,6 +360,51 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
+#preloader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 2000;
+  background: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #913d55;
+  border-radius: 100%;
+  -webkit-animation: scaleout 1s infinite ease-in-out;
+          animation: scaleout 1s infinite ease-in-out; }
+
+@-webkit-keyframes scaleout {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes scaleout {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
 @font-face {
   font-family: 'proxima-nova-soft-bold';
   src: url("../../assets/fonts/proxima-novasoft-bold-webfont.eot");
@@ -604,8 +649,8 @@ input[type="button"] {
     width: 80px; }
     @media (max-width: 865px) {
       .logo img {
-        max-width: 60px;
-        padding: -10px; } }
+        max-width: 70px;
+        padding-top: 30px; } }
 
 .main-nav {
   display: -webkit-box;

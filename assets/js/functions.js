@@ -1,3 +1,6 @@
+
+
+
 function smoothScroll (duration) {
 	$('a[href^="#"]').on('click', function(event) {
 
@@ -19,6 +22,19 @@ $(window).load(function(e) {
 });
 
 $( document ).ready(function() {
+		var fadeintrigger = 0;
+	$('#container').imagesLoaded( function(){
+	  $('#preloader').fadeOut("slow");
+		var fadeintrigger = 1;
+		if (fadeintrigger == 1) {
+			startpieces();
+		}
+
+
+	  /* other stuff... */
+	});
+
+
 
 	$("#porflio-piece-1-open").animatedModal();
 	$("#demo02").animatedModal({
@@ -28,8 +44,15 @@ $( document ).ready(function() {
 	    color:'#ffffff'
 	});
 
+	$("#porflio-piece-3-open").animatedModal({
+			modalTarget:'piece3',
+			animatedIn:'bounceInLeft',
+			animatedOut:'bounceOutLeft',
+			color:'#ffffff'
+	});
 
-	startpieces();
+
+
   smoothScroll(300);
 	$(window).on('scroll', function() {
 
