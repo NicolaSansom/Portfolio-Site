@@ -1,6 +1,6 @@
 
 
-
+// Smooth Scroll between the different sections
 function smoothScroll (duration) {
 	$('a[href^="#"]').on('click', function(event) {
 
@@ -15,34 +15,34 @@ function smoothScroll (duration) {
 	});
 }
 
-$(window).load(function(e) {
-
-
-
-});
 
 $( document ).ready(function() {
-		var fadeintrigger = 0;
-	$('#container').imagesLoaded( function(){
+
+	// Loading screen
+	var fadeintrigger = 0;
+	$('#page-content').imagesLoaded( function(){
 	  $('#preloader').fadeOut("slow");
 		var fadeintrigger = 1;
 		if (fadeintrigger == 1) {
 			startpieces();
 		}
-
-
-	  /* other stuff... */
 	});
 
-
-
-	$("#porflio-piece-1-open").animatedModal();
-	$("#demo02").animatedModal({
-	    modalTarget:'modal-02',
+	//Opening trigger for opening portflios pieces
+	$("#porflio-piece-1-open").animatedModal({
+	    modalTarget:'piece1',
 	    animatedIn:'bounceInLeft',
 	    animatedOut:'bounceOutLeft',
 	    color:'#ffffff'
 	});
+
+	$("#porflio-piece-2-open").animatedModal({
+	    modalTarget:'piece2',
+	    animatedIn:'bounceInLeft',
+	    animatedOut:'bounceOutLeft',
+	    color:'#ffffff'
+	});
+
 
 	$("#porflio-piece-3-open").animatedModal({
 			modalTarget:'piece3',
@@ -52,10 +52,47 @@ $( document ).ready(function() {
 	});
 
 
+		$("#porflio-piece-4-open").animatedModal({
+				modalTarget:'piece4',
+				animatedIn:'bounceInLeft',
+				animatedOut:'bounceOutLeft',
+				color:'#ffffff'
+		});
 
+	$("#porflio-piece-5-open").animatedModal({
+			modalTarget:'piece5',
+			animatedIn:'bounceInLeft',
+			animatedOut:'bounceOutLeft',
+			color:'#ffffff'
+	});
+
+	$("#porflio-piece-6-open").animatedModal({
+			modalTarget:'piece6',
+			animatedIn:'bounceInLeft',
+			animatedOut:'bounceOutLeft',
+			color:'#ffffff'
+	});
+
+	$("#porflio-piece-7-open").animatedModal({
+			modalTarget:'piece7',
+			animatedIn:'bounceInLeft',
+			animatedOut:'bounceOutLeft',
+			color:'#ffffff'
+	});
+
+	$("#porflio-piece-8-open").animatedModal({
+			modalTarget:'piece8',
+			animatedIn:'bounceInLeft',
+			animatedOut:'bounceOutLeft',
+			color:'#ffffff'
+	});
+
+
+
+	//Calling smooth scroll function
   smoothScroll(300);
 	$(window).on('scroll', function() {
-
+	//Trigger the hi text in about me section
 	var wScroll = $(window).scrollTop();
 	if($('#about-me').offset().top - 100 < wScroll) {
 		if(trigger ==1 ){
@@ -64,13 +101,10 @@ $( document ).ready(function() {
 
 	}
 
-
-
 	});
+	// For the text animation
 	trigger = 0;
-
   var blinks = 0;
-  var timetotype = false;
 
 	function text() {
   while (blinks < 1) {
@@ -78,6 +112,7 @@ $( document ).ready(function() {
   $('.typing-text').animate({"opacity": "1"}, "slow");
   blinks = blinks + 1;
   }
+
   $('.typing-text').promise().done(function(){
     $('.typing-text').html("Hey There!!");
     var $el = $('.typing-text'),
@@ -109,11 +144,12 @@ $el.text('|');
   });
 }
 
+
     $('.mobile-nav-toggle').on('click', function() {
        $(".mobile-nav-toggle, .mobile-nav").toggleClass("is-open");
     });
 
-// fade in selected work
+// fade in all selected work after full load
 
 function startpieces(){
 
