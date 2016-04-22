@@ -287,12 +287,12 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 513906,
+		"initialSize": 137590,
 		"inputAbbreviatedPath": "\/assets\/img\/map-texture-white.png",
 		"outputAbbreviatedPath": "\/assets\/img\/map-texture-white.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/map-texture.png": {
 		"fileType": 32768,
@@ -303,29 +303,29 @@
 		"outputAbbreviatedPath": "\/assets\/img\/map-texture.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/me.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 422663,
+		"initialSize": 96258,
 		"inputAbbreviatedPath": "\/assets\/img\/me.JPG",
 		"outputAbbreviatedPath": "\/assets\/img\/me.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/pieces\/argos_email.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 404403,
+		"initialSize": 312321,
 		"inputAbbreviatedPath": "\/assets\/img\/pieces\/argos_email.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/argos_email.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/pieces\/cards.jpg": {
 		"fileType": 16384,
@@ -334,17 +334,6 @@
 		"initialSize": 84856,
 		"inputAbbreviatedPath": "\/assets\/img\/pieces\/cards.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/cards.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/pieces\/creatives.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 468596,
-		"inputAbbreviatedPath": "\/assets\/img\/pieces\/creatives.png",
-		"outputAbbreviatedPath": "\/assets\/img\/pieces\/creatives.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -358,40 +347,18 @@
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/holidayextrastrig.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/assets\/img\/pieces\/hotel.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 958484,
-		"inputAbbreviatedPath": "\/assets\/img\/pieces\/hotel.png",
-		"outputAbbreviatedPath": "\/assets\/img\/pieces\/hotel.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/pieces\/leakyroof.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 571876,
-		"inputAbbreviatedPath": "\/assets\/img\/pieces\/leakyroof.png",
-		"outputAbbreviatedPath": "\/assets\/img\/pieces\/leakyroof.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/pieces\/royal_email.jpg": {
+	"\/assets\/img\/pieces\/leakyroof.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 320110,
-		"inputAbbreviatedPath": "\/assets\/img\/pieces\/royal_email.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/pieces\/royal_email.jpg",
+		"initialSize": 241714,
+		"inputAbbreviatedPath": "\/assets\/img\/pieces\/leakyroof.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/pieces\/leakyroof.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/pieces\/topcompare_advert.jpg": {
 		"fileType": 16384,
@@ -402,7 +369,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/topcompare_advert.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/pieces\/topcompare_desktop.jpg": {
 		"fileType": 16384,
@@ -413,18 +380,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/topcompare_desktop.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/pieces\/topcompare_mobile.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 74507,
-		"inputAbbreviatedPath": "\/assets\/img\/pieces\/topcompare_mobile.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/pieces\/topcompare_mobile.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/pieces\/topcompare_mobile.png": {
 		"fileType": 32768,
@@ -435,7 +391,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/topcompare_mobile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/animatedModal.js": {
 		"fileType": 64,
