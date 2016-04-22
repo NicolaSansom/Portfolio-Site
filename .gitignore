@@ -33,4 +33,7 @@ Temporary Items
 # General CodeKit files to ignore
 config.codekit
 /min
+<<<<<<< 3ac74921c9476536f231b49b9dc7f22695d6a3ad
 
+=======
+>>>>>>> Add git ignore
