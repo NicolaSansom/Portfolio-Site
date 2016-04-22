@@ -2991,20 +2991,6 @@ input[type="button"] {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
 
-#model-02 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: middle;
-  -webkit-align-items: middle;
-      -ms-flex-align: middle;
-          align-items: middle;
-  -webkit-box-pack: middle;
-  -webkit-justify-content: middle;
-      -ms-flex-pack: middle;
-          justify-content: middle; }
-
 .cross {
   margin: 20px 0 0 30px;
   position: relative;
@@ -3038,6 +3024,9 @@ input[type="button"] {
   background: #eae6e1 url("../../assets/img/map-texture.png");
   background-size: 50%;
   border-bottom: 1px solid #E0E0E0; }
+  @media (max-width: 865px) {
+    #work {
+      background-size: 100%; } }
   #work h1 {
     padding: 0 0 0.2em 0.6em;
     margin: 0;
@@ -3432,7 +3421,8 @@ input[type="button"] {
       -webkit-align-items: center;
           -ms-flex-align: center;
                   -ms-grid-row-align: center;
-              align-items: center; } }
+              align-items: center;
+      background-size: 100%; } }
 
 .intro {
   display: -webkit-box;
@@ -3481,11 +3471,15 @@ input[type="button"] {
     .bio {
       width: 90%;
       text-align: center;
-      margin: 50px 0 0 0; } }
+      margin: 50px 0 0 0;
+      font-size: 15px; } }
   .bio p {
     margin: 0;
     padding: 0.5em 0;
     padding-right: 40px; }
+    @media (max-width: 865px) {
+      .bio p {
+        padding: 10px 0 0 0; } }
 
 .well-versed {
   padding-top: 10px;
@@ -3555,11 +3549,15 @@ input[type="button"] {
     .fav-emojis {
       display: block;
       text-align: center;
-      padding-bottom: 1em; } }
+      padding-bottom: 1em;
+      font-size: 15px; } }
   .fav-emojis img {
     width: 50px;
     border: 0;
     display: inline; }
+    @media (max-width: 650px) {
+      .fav-emojis img {
+        width: 40px; } }
 
 .emojis {
   padding-top: 15px; }
@@ -3569,9 +3567,6 @@ input[type="button"] {
   @media (max-width: 1100px) {
     .typing-text {
       font-size: 70px;
-      text-align: center; } }
-  @media (max-width: 865px) {
-    .typing-text {
       text-align: center; } }
   @media (max-width: 650px) {
     .typing-text {
@@ -3591,6 +3586,9 @@ input[type="button"] {
   transition: 0.5s linear;
   cursor: pointer;
   text-align: center; }
+  @media (max-width: 865px) {
+    #contact-me {
+      background-size: 100%; } }
   #contact-me a {
     text-align: center;
     font-size: 50px;
