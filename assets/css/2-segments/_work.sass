@@ -109,9 +109,9 @@
   +mummy-bear
     font-size: 24px
   +baby-bear
-    font-size: 27px
+    font-size: 29px
   +tiny-baby-bear
-    font-size: 18px
+    font-size: 19px
 
 .project-type
   text-transform: uppercase
@@ -189,6 +189,8 @@
   flex-flow: row wrap
   align-items: center
   justify-content: center
+  +baby-bear
+    font-size: 15px
 
   p
     margin: 0
@@ -199,10 +201,17 @@
 .my-role
   width: 40%
   margin-top: 0.5em
+  +baby-bear
+    width: 100%
+
 .online
   text-align: right
   width: 60%
   align-items: flex-end
+  +baby-bear
+    width: 100%
+    text-align: left
+    margin-top: 1em
 
 .browser-wrapper
   display: flex
@@ -216,10 +225,14 @@
 .browser
   position: relative
   width: 76%
+  +baby-bear
+    width: 100%
 
 .browser-50
   width: 46%
   position: relative
+  +tiny-baby-bear
+    width: 100%
 
   img
     width: 100%
@@ -249,10 +262,14 @@
 .browser-header
   width: 100%
   min-height: 5.7vw
+  +baby-bear
+    min-height: 7.1vw
 
 .browser-header-50
   width: 100%
-  min-height: 3vw
+  min-height: 3.3vw
+  +tiny-baby-bear
+    height: 6vh
 
 .phone-header
   width: 100%
@@ -270,18 +287,26 @@
   justify-content: center
 .mobile-compare
   width: 35%
+  +tiny-baby-bear
+    width: 100%
   img
     width: 100%
 
 .advert-compare
   width: 40%
+  +tiny-baby-bear
+    width: 100%
   img
     width: 100%
 
 .mobile-screen
+
   img
     width: 60%
     margin-left: 30px
+    +tiny-baby-bear
+      width: 100%
+      margin: 0
 
 .app-wrapper
   display: flex
@@ -292,6 +317,8 @@
 
 .app
   width: 28%
+  +baby-bear
+    width: 100%
   img
     width: 100%
     height: auto
