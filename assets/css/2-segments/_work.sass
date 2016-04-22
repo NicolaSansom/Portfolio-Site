@@ -58,10 +58,12 @@
 
 .porflio-piece
   width: 23%
+  cursor: pointer
   opacity: 0
   transition: opacity 0.25s linear
   &.seen
     animation-name: fadeIn
+    cursor: pointer
     animation-duration: 1s
     animation-delay: 1s
     animation-fill-mode: both
@@ -81,7 +83,7 @@
 
   &:hover
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.3)
-    cursor: pointer
+
 
 
 .porflio-piece-inner
@@ -195,11 +197,11 @@
   width: 100%
 
 .my-role
-  width: 60%
+  width: 40%
   margin-top: 0.5em
 .online
   text-align: right
-  width: 40%
+  width: 60%
   align-items: flex-end
 
 .browser-wrapper
@@ -207,22 +209,36 @@
   padding: 1em
   align-items: center
   justify-content: center
+  flex-flow: row wrap
 
 
 
 .browser
   position: relative
   width: 76%
-  margin-bottom: 50px
+
+.browser-50
+  width: 46%
+  position: relative
+
+  img
+    width: 100%
+  .screen
+    width: 99%
+    margin: 0 0 0 2px
 
 
+
+
+
+.extra
+  width: 100%
 
 .pos
   position: absolute
 
 .screen
   width: 98.8%
-  height: 0
   border-bottom-right-radius: 5px
   margin: 0 auto
 
@@ -234,8 +250,48 @@
   width: 100%
   min-height: 5.7vw
 
+.browser-header-50
+  width: 100%
+  min-height: 3vw
+
+.phone-header
+  width: 100%
+  min-height: 15vh
+
 @keyframes fadeIn
   from
     opacity: 0
   to
     opacity: 1
+.extra
+  display: flex
+  align-items: center
+  flex-flow: row wrap
+  justify-content: center
+.mobile-compare
+  width: 35%
+  img
+    width: 100%
+
+.advert-compare
+  width: 40%
+  img
+    width: 100%
+
+.mobile-screen
+  img
+    width: 60%
+    margin-left: 30px
+
+.app-wrapper
+  display: flex
+  padding: 2em 1em 1em 1em
+  align-items: center
+  justify-content: space-around
+  flex-flow: row wrap
+
+.app
+  width: 28%
+  img
+    width: 100%
+    height: auto
