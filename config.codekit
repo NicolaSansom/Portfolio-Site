@@ -474,12 +474,12 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 137590,
+		"initialSize": 137299,
 		"inputAbbreviatedPath": "\/assets\/img\/map-texture-white.png",
 		"outputAbbreviatedPath": "\/assets\/img\/map-texture-white.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/img\/map-texture.png": {
 		"fileType": 32768,
@@ -496,29 +496,29 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 96258,
+		"initialSize": 95363,
 		"inputAbbreviatedPath": "\/assets\/img\/me.JPG",
 		"outputAbbreviatedPath": "\/assets\/img\/me.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/img\/pieces\/argos_email.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 312321,
+		"initialSize": 308555,
 		"inputAbbreviatedPath": "\/assets\/img\/pieces\/argos_email.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/argos_email.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/img\/pieces\/cards.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 84856,
+		"initialSize": 62110,
 		"inputAbbreviatedPath": "\/assets\/img\/pieces\/cards.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/cards.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -529,7 +529,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 209019,
+		"initialSize": 492655,
 		"inputAbbreviatedPath": "\/assets\/img\/pieces\/creatives.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/creatives.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -562,12 +562,12 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 241714,
+		"initialSize": 266449,
 		"inputAbbreviatedPath": "\/assets\/img\/pieces\/leakyroof.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/leakyroof.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/img\/pieces\/mobile1.jpg": {
 		"fileType": 16384,
