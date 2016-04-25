@@ -2945,7 +2945,7 @@ input[type="button"] {
     font-weight: 700;
     letter-spacing: 0.1em; }
 
-.portflio-wrapper {
+.portfolio-wrapper {
   width: 80%;
   margin: auto;
   display: flex;
@@ -2953,10 +2953,10 @@ input[type="button"] {
   align-items: center;
   justify-content: space-around; }
   @media (max-width: 865px) {
-    .portflio-wrapper {
+    .portfolio-wrapper {
       width: 90%; } }
 
-.porflio-piece {
+.portfolio-piece {
   width: 23%;
   cursor: pointer;
   opacity: 0;
@@ -2967,31 +2967,31 @@ input[type="button"] {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.4s;
   background: white; }
-  .porflio-piece.seen {
+  .portfolio-piece.seen {
     animation-name: fadeIn;
     cursor: pointer;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: both; }
   @media (max-width: 1100px) {
-    .porflio-piece {
+    .portfolio-piece {
       width: 48%;
       padding-bottom: 48%; } }
   @media (max-width: 865px) {
-    .porflio-piece {
+    .portfolio-piece {
       width: 48%;
       padding-bottom: 48%; } }
-  .porflio-piece:hover {
+  .portfolio-piece:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
 
-.porflio-piece-inner {
+.portfolio-piece-inner {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
   height: 100%; }
-  .porflio-piece-inner a {
+  .portfolio-piece-inner a {
     text-decoration: none; }
 
 .project-name {
@@ -3007,7 +3007,7 @@ input[type="button"] {
       font-size: 23px; } }
   @media (max-width: 1100px) {
     .project-name {
-      font-size: 24px; } }
+      font-size: 26px; } }
   @media (max-width: 865px) {
     .project-name {
       font-size: 29px; } }
@@ -3046,31 +3046,31 @@ input[type="button"] {
   left: 30%;
   content: ""; }
 
-#porflio-piece-3 .project-type {
+#portfolio-piece-3 .project-type {
   color: #59a18f; }
 
-#porflio-piece-4 span {
+#portfolio-piece-4 span {
   font-size: 16px;
   color: #9E9E9E;
   font-style: italic;
   font-weight: normal;
   text-transform: lowercase; }
   @media (max-width: 650px) {
-    #porflio-piece-4 span {
+    #portfolio-piece-4 span {
       font-size: 14px; } }
 
-#porflio-piece-5 .project-type {
+#portfolio-piece-5 .project-type {
   color: #ab9b87; }
 
-#porflio-piece-6 {
+#portfolio-piece-6 {
   width: 100%; }
-  #porflio-piece-6 .project-type {
+  #portfolio-piece-6 .project-type {
     color: #567599; }
 
-#porflio-piece-7 .project-type {
+#portfolio-piece-7 .project-type {
   color: #59a18f; }
 
-#porflio-piece-8 .project-type {
+#portfolio-piece-8 .project-type {
   color: #c37188; }
 
 .content-about-wrapper {
@@ -3094,7 +3094,7 @@ input[type="button"] {
     margin: 0;
     padding: 0; }
 
-.breif {
+.Brief {
   width: 100%; }
 
 .my-role {

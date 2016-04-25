@@ -123,50 +123,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/apple-touch-icon-57x57.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1795,
-		"inputAbbreviatedPath": "\/apple-touch-icon-57x57.png",
-		"outputAbbreviatedPath": "\/apple-touch-icon-57x57.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/apple-touch-icon-60x60.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1893,
-		"inputAbbreviatedPath": "\/apple-touch-icon-60x60.png",
-		"outputAbbreviatedPath": "\/apple-touch-icon-60x60.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/apple-touch-icon-72x72.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2219,
-		"inputAbbreviatedPath": "\/apple-touch-icon-72x72.png",
-		"outputAbbreviatedPath": "\/apple-touch-icon-72x72.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/apple-touch-icon-76x76.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2250,
-		"inputAbbreviatedPath": "\/apple-touch-icon-76x76.png",
-		"outputAbbreviatedPath": "\/apple-touch-icon-76x76.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/apple-touch-icon-precomposed.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -562,7 +518,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 266449,
+		"initialSize": 196804,
 		"inputAbbreviatedPath": "\/assets\/img\/pieces\/leakyroof.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/pieces\/leakyroof.jpg",
 		"outputPathIsOutsideProject": 0,

@@ -29,14 +29,14 @@ $( document ).ready(function() {
 	});
 
 	//Opening trigger for opening portflios pieces
-	$("#porflio-piece-1-open").animatedModal({
+	$("#portfolio-piece-1-open").animatedModal({
 	    modalTarget:'piece1',
 	    animatedIn:'bounceInLeft',
 	    animatedOut:'bounceOutLeft',
 	    color:'#ffffff'
 	});
 
-	$("#porflio-piece-2-open").animatedModal({
+	$("#portfolio-piece-2-open").animatedModal({
 	    modalTarget:'piece2',
 	    animatedIn:'bounceInLeft',
 	    animatedOut:'bounceOutLeft',
@@ -44,7 +44,7 @@ $( document ).ready(function() {
 	});
 
 
-	$("#porflio-piece-3-open").animatedModal({
+	$("#portfolio-piece-3-open").animatedModal({
 			modalTarget:'piece3',
 			animatedIn:'bounceInLeft',
 			animatedOut:'bounceOutLeft',
@@ -52,35 +52,35 @@ $( document ).ready(function() {
 	});
 
 
-		$("#porflio-piece-4-open").animatedModal({
+		$("#portfolio-piece-4-open").animatedModal({
 				modalTarget:'piece4',
 				animatedIn:'bounceInLeft',
 				animatedOut:'bounceOutLeft',
 				color:'#ffffff'
 		});
 
-	$("#porflio-piece-5-open").animatedModal({
+	$("#portfolio-piece-5-open").animatedModal({
 			modalTarget:'piece5',
 			animatedIn:'bounceInLeft',
 			animatedOut:'bounceOutLeft',
 			color:'#ffffff'
 	});
 
-	$("#porflio-piece-6-open").animatedModal({
+	$("#portfolio-piece-6-open").animatedModal({
 			modalTarget:'piece6',
 			animatedIn:'bounceInLeft',
 			animatedOut:'bounceOutLeft',
 			color:'#ffffff'
 	});
 
-	$("#porflio-piece-7-open").animatedModal({
+	$("#portfolio-piece-7-open").animatedModal({
 			modalTarget:'piece7',
 			animatedIn:'bounceInLeft',
 			animatedOut:'bounceOutLeft',
 			color:'#ffffff'
 	});
 
-	$("#porflio-piece-8-open").animatedModal({
+	$("#portfolio-piece-8-open").animatedModal({
 			modalTarget:'piece8',
 			animatedIn:'bounceInLeft',
 			animatedOut:'bounceOutLeft',
@@ -153,9 +153,9 @@ $el.text('|');
 
 function startpieces(){
 
-		$('.porflio-piece').each(function(i) {
+		$('.portfolio-piece').each(function(i) {
 			setTimeout(function(){
-				$('.porflio-piece').eq(i).addClass('seen');
+				$('.portfolio-piece').eq(i).addClass('seen');
 			}, 300 * i);
 
 		});
