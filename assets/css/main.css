@@ -3093,6 +3093,7 @@ input[type="button"] {
 
 .portfolio-piece-inner {
   position: absolute;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3107,8 +3108,7 @@ input[type="button"] {
           justify-content: center;
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  height: 100%; }
+          flex-flow: row wrap; }
   .portfolio-piece-inner a {
     text-decoration: none; }
 
@@ -3388,6 +3388,21 @@ input[type="button"] {
     width: 100%;
     height: auto; }
 
+@-moz-document url-prefix() {
+  .portfolio-piece {
+    min-height: 214px; }
+    @media (min-width: 1500px) {
+      .portfolio-piece {
+        min-height: 214px; } }
+    @media (max-width: 1100px) {
+      .portfolio-piece {
+        min-height: 300px; } }
+    @media (max-width: 865px) {
+      .portfolio-piece {
+        min-height: 190px; } }
+    @media (max-width: 650px) {
+      .portfolio-piece {
+        min-height: 180px; } } }
 #about-me {
   background: url("../../assets/img/map-texture.png");
   background-size: 50%;

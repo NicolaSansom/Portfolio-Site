@@ -85,11 +85,11 @@
 
 .portfolio-piece-inner
   position: absolute
+  height: 100%
   display: flex
   align-items: center
   justify-content: center
   flex-flow: row wrap
-  height: 100%
   a
     text-decoration: none
 
@@ -319,3 +319,15 @@
   img
     width: 100%
     height: auto
+
+@-moz-document url-prefix()
+  .portfolio-piece
+    min-height: 214px
+    +daddy-bear
+      min-height: 214px
+    +mummy-bear
+      min-height: 300px
+    +baby-bear
+      min-height: 190px
+    +tiny-baby-bear
+      min-height: 180px
