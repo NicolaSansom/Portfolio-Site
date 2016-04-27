@@ -3403,6 +3403,9 @@ input[type="button"] {
     @media (max-width: 650px) {
       .portfolio-piece {
         min-height: 180px; } } }
+_:-ms-fullscreen, :root .ie11up {
+  background: green; }
+
 #about-me {
   background: url("../../assets/img/map-texture.png");
   background-size: 50%;
