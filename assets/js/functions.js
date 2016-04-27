@@ -1,4 +1,7 @@
 
+if (navigator.userAgent.match(/msie|trident/i) ){
+  $('html').removeClass('flexbox').addClass('no-flexbox');
+}
 
 // Smooth Scroll between the different sections
 function smoothScroll (duration) {
