@@ -3403,7 +3403,7 @@ input[type="button"] {
     @media (max-width: 650px) {
       .portfolio-piece {
         min-height: 180px; } } }
-_:-ms-fullscreen, :root .ie11up {
+_:-ms-fullscreen body, :root .ie11up body {
   background: green; }
 
 #about-me {
